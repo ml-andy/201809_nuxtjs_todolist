@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'nuxt.js demo',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -67,5 +67,15 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  server: {
+    port: 3000, // default: 3000
+    host: '0.0.0.0', // default: localhost,
+  },
+  serverMiddleware: [
+    {
+      path: '/api',
+      handler: '~/api/index.js',
+    },
+  ],
 }
