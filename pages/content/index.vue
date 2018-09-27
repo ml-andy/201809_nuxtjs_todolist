@@ -1,6 +1,6 @@
 <template>
   <section class="index">
-    這是首頁
+    這是內容頁
   </section>
 </template>
 
