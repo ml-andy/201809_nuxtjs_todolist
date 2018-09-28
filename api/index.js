@@ -56,6 +56,10 @@ const broadcast = [
 
 app.get('/broadcast', (req, res) => {
   res.json(broadcast);
-})
+});
+app.get('/broadcast/:index', (req, res) => {
+  const { index = 0 } = req.params;
+  res.json(broadcast[index]);
+});
 
 module.exports = app;

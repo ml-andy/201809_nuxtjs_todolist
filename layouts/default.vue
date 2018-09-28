@@ -14,7 +14,7 @@
           to="/">列表頁</nuxt-link>
         <nuxt-link
           class="button--grey"
-          to="/content">內容頁</nuxt-link>
+          to="/content/0">內容頁</nuxt-link>
       </div>
       <div class="content">
         <nuxt/>

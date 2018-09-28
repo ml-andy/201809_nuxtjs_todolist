@@ -9,7 +9,7 @@ import axios from 'axios';
 
 export default {
   mounted() {
-    axios.get('/api/broadcast/')
+    axios.get('/api/broadcast/1')
       .then(function (response) {
         // handle success
         console.log(response);
